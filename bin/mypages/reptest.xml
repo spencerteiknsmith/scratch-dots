@@ -1,0 +1,40 @@
+<Page
+    rows="10"
+    cols="10">
+
+  <Messages>
+    <Message>TEST</Message>
+  </Messages>
+  
+  <Character
+      row="2"
+      col="0"
+      color="red">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Repeat
+	    count="3">
+	  <Block>translate(RIGHT, 1)</Block>
+	  <Repeat
+	      count = "2">
+	    <Block>translate(UP, 1)</Block>
+	  </Repeat>
+	  <Block>translate(RIGHT, 1)</Block>
+	  <Block>sendmessage(TEST)</Block>
+	</Repeat>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="0"
+      col="0">
+    <Script>
+      <Trigger>onmessage(TEST)</Trigger>
+      <Sequence>
+	<Block>translate(DOWN, 1)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+</Page>

@@ -1,0 +1,561 @@
+<Page
+    rows="15"
+    cols="20">
+
+  <Messages>
+    <Message>INC1</Message>
+    <Message>CARRY10</Message>
+    <Message>CARRY100</Message>
+    <Message>READTIME</Message>
+  </Messages>
+
+  <Character
+      row="0"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak(zero)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="6"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak(nine)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="7"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak(eight)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="8"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak(seven)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="9"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak(six)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="10"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak(five)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="11"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak(four)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="12"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak(three)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="13"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak(two)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="14"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak(one)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="4"
+      col="10"
+      color="backblue">
+    <Script>
+      <Trigger>onmessage(READTIME)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 6)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="4"
+      col="14"
+      color="#48;5;52">
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak( tens and )</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="4"
+      col="12"
+      color="#48;5;52">
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>speak( hundred )</Block>
+      </Sequence>
+    </Script>
+  </Character>
+  
+  <Character
+      row="1"
+      col="18"
+      color="backgreen">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(LEFT, 3)</Block>
+	<Repeat
+	    count="1">
+	  <Block>wait(4)</Block>
+	</Repeat>
+	<Block>wait(2)</Block>
+	<Block>translate(LEFT, 2)</Block>
+	<Repeat
+	    count="2">
+	  <Block>wait(4)</Block>
+	</Repeat>
+	<Block>wait(2)</Block>
+	<Block>translate(LEFT, 2)</Block>
+	<Repeat
+	    count="4">
+	  <Block>wait(4)</Block>
+	</Repeat>
+	<Block>wait(2)</Block>
+	<Block>translate(LEFT, 2)</Block>
+	<Repeat
+	    count="8">
+	  <Block>wait(4)</Block>
+	</Repeat>
+	<Block>wait(2)</Block>
+	<Block>translate(LEFT, 2)</Block>
+	<Repeat
+	    count="16">
+	  <Block>wait(4)</Block>
+	</Repeat>
+	<Block>wait(2)</Block>
+	<Block>translate(LEFT, 2)</Block>
+	<Repeat
+	    count="32">
+	  <Block>wait(4)</Block>
+	</Repeat>
+	<Block>wait(2)</Block>
+	<Block>translate(LEFT, 2)</Block>
+	<Repeat
+	    count="64">
+	  <Block>wait(4)</Block>
+	</Repeat>
+	<Block>wait(2)</Block>
+	<Block>translate(LEFT, 2)</Block>
+	<Repeat
+	    count="128">
+	  <Block>wait(4)</Block>
+	</Repeat>
+	<Block>wait(2)</Block>
+	<Block>translate(LEFT, 1)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="1"
+      col="0"
+      color="backgreen">
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+	<Block>sendmessage(READTIME)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="2"
+      col="16"
+      color="black, backwhite">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Repeat
+	    count="1">
+	  <Block>sendmessage(INC1)</Block>
+	  <Block>wait(3)</Block>
+	</Repeat>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="2"
+      col="14"
+      color="black, backwhite">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Repeat
+	    count="2">
+	  <Block>sendmessage(INC1)</Block>
+	  <Block>wait(3)</Block>
+	</Repeat>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="2"
+      col="12"
+      color="black, backwhite">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Repeat
+	    count="4">
+	  <Block>sendmessage(INC1)</Block>
+ 	  <Block>wait(3)</Block>
+	</Repeat>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="2"
+      col="10"
+      color="black, backwhite">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Repeat
+	    count="8">
+	  <Block>sendmessage(INC1)</Block>
+	  <Block>wait(3)</Block>
+	</Repeat>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="2"
+      col="8"
+      color="black, backwhite">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Repeat
+	    count="16">
+	  <Block>sendmessage(INC1)</Block>
+	  <Block>wait(3)</Block>
+	</Repeat>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="2"
+      col="6"
+      color="black, backwhite">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Repeat
+	    count="32">
+	  <Block>sendmessage(INC1)</Block>
+	  <Block>wait(3)</Block>
+	</Repeat>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="2"
+      col="4"
+      color="black, backwhite">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Repeat
+	    count="64">
+	  <Block>sendmessage(INC1)</Block>
+	  <Block>wait(3)</Block>
+	</Repeat>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="2"
+      col="2"
+      color="black, backwhite">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Repeat
+	    count="128">
+	  <Block>sendmessage(INC1)</Block>
+	  <Block>wait(3)</Block>
+	</Repeat>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="0"
+      col="15"
+      color="backred">
+    <Script>
+      <Trigger>onmessage(INC1)</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>translate(LEFT, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>onmessage(CARRY10)</Trigger>
+      <Sequence>
+	<Block>gohome()</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="0"
+      col="13"
+      color="backred">
+    <Script>
+      <Trigger>onmessage(CARRY10)</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>translate(LEFT, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>onmessage(CARRY100)</Trigger>
+      <Sequence>
+	<Block>gohome()</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="0"
+      col="11"
+      color="backred">
+    <Script>
+      <Trigger>onmessage(CARRY100)</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="5"
+      col="15"
+      color="backmagenta">
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>sendmessage(CARRY10)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="5"
+      col="13"
+      color="backmagenta">
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>sendmessage(CARRY100)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+</Page>

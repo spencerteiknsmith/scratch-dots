@@ -1,0 +1,64 @@
+<Page
+    rows="3"
+    cols="4">
+
+  <Messages>
+    <Message>TEST</Message>
+    <Message>TWO</Message>
+  </Messages>
+  
+  <Character
+      row="2"
+      col="0">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 3)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>onmessage(TWO)</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+	<Block>translate(LEFT, 2)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="2"
+      col="2">
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+	<Block>sendmessage(TEST)</Block>
+	<Block>translate(LEFT, 1)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="0"
+      col="0">
+    <Script>
+      <Trigger>onmessage(TEST)</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 1)</Block>
+	<Block>translate(DOWN, 1)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>sendmessage(TWO)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+<!--
+  <Character
+      row="2"
+      col="1">
+  </Character>
+-->
+</Page>

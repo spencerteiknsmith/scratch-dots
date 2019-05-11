@@ -1,0 +1,120 @@
+
+Buttons: []
+Messages: []
+
+Active page:
+Is running? true
+All DotCharacters: [Ch#2, Ch#1]
+Current events: [User tap at y: 2, x: 1]
+The grid:
+null,   null, null,   null
+null,   null, null,   null
+null, [Ch#1], null, [Ch#2]
+
+
+
+
+
+
+
+
+
+Buttons: []
+Messages: []
+
+Active page:
+Is running? true
+All DotCharacters: [Ch#2, Ch#1]
+Current events: []
+The grid:
+null, null,   null,   null
+null, null,   null,   null
+null,   [], [Ch#1], [Ch#2]
+
+
+
+
+
+
+
+
+
+Buttons: []
+Messages: []
+
+Active page:
+Is running? true
+All DotCharacters: [Ch#2, Ch#1]
+Current events: []
+The grid:
+null, null, null,         null
+null, null, null,         null
+null,   [],   [], [Ch#2, Ch#1]
+
+
+
+
+
+
+
+
+
+Buttons: []
+Messages: []
+
+Active page:
+Is running? true
+All DotCharacters: [Ch#2, Ch#1]
+Current events: []
+The grid:
+null, null, null,   null
+null, null, null, [Ch#2]
+null,   [],   [], [Ch#1]
+
+
+
+
+
+
+
+
+
+Buttons: []
+Messages: []
+
+Active page:
+Is running? true
+All DotCharacters: [Ch#2, Ch#1]
+Current events: []
+The grid:
+null, null, null, [Ch#2]
+null, null, null,     []
+null,   [],   [], [Ch#1]
+
+
+
+
+
+
+
+
+
+Buttons: []
+Messages: []
+
+Active page:
+Is running? true
+All DotCharacters: [Ch#2, Ch#1]
+Current events: []
+The grid:
+null, null, null,           []
+null, null, null,           []
+null,   [],   [], [Ch#2, Ch#1]
+
+
+
+
+
+
+
+

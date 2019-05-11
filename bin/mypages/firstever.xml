@@ -1,0 +1,53 @@
+<Page
+    rows="10"
+    cols="4">
+
+  <Character
+      row="9"
+      col="1">
+    <Script>
+      <Trigger>ontap()</Trigger>
+      <Sequence>
+	<Block>translate(RIGHT, 2)</Block>
+      </Sequence>
+    </Script>
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>translate(LEFT, 2)</Block>
+	<Block>translate(UP, 2)</Block>
+	<Block>translate(RIGHT, 2)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="9"
+      col="3">
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>translate(UP, 1)</Block>
+      </Sequence>
+      <DoesRepeat>TRUE</DoesRepeat>
+    </Script>
+  </Character>
+
+  <Character
+      row="5"
+      col="1">
+    <Script>
+      <Trigger>oncollision()</Trigger>
+      <Sequence>
+	<Block>gohome()</Block>
+	<Block>translate(UP, 3)</Block>
+      </Sequence>
+    </Script>
+  </Character>
+
+  <Character
+      row="2"
+      col="1">
+  </Character>
+
+</Page>
