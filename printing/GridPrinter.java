@@ -10,6 +10,15 @@ public class GridPrinter extends java.io.PrintStream {
 
     private char vertDividerChar;
     private char horizDividerChar;
+    private char crossDividerChar;
+    private char lBorderTeeChar;
+    private char rBorderTeeChar;
+    private char uBorderTeeChar;
+    private char dBorderTeeChar;
+    private char ulCornerChar;
+    private char urCornerChar;
+    private char dlCornerChar;
+    private char drCornerChar;
 
     private String dividerStyleStr;
 
@@ -82,8 +91,62 @@ public class GridPrinter extends java.io.PrintStream {
 	int numCharsHoriz = (cellWidth + 1) * numCols + 1;
 
 	moveCursorToScreenPos(1, 1);
-	
-	
+
+	this.print(dividerStyleStr);
+	this.print(ulCornerChar);
+	for (int x = 1; x < numCharsHoriz - 1; x++) {
+	    this.print((x % (cellWidth + 1)) == 0 ? uBorderTeeChar : horizDividerChar);
+	}
+	this.print(urCornerChar);
+	this.print(RESET_STYLE);
+	this.print(NEXT_LINE);
+
+	boolean onRow = true;
+	boolean onCol = false;
+	for (int y = 1; y < numCharsVert - 1; y++) {
+	    this.print(dividerStyleStr);
+	    onRow = (y % (cellHeight + 1)) == 0;
+	    this.print(onRow ? lBorderTeeChar : vertDividerChar);
+	    this.print(RESET_STYLE);
+	    
+	    for (int x = 1; x < numCharsHoriz - 1; x++) {
+		onCol = (x % (cellWidth + 1)) == 0;
+		if (onRow || onCol) {
+		    this.print(dividerStyleStr);
+		}
+		if (onRow) {
+		    if (onCol) {
+			this.print(crossDividerChar);
+		    }
+		    else {
+			this.print(horizDividerChar);
+		    }
+		}
+		else {
+		    if (onCol) {
+			this.print(vertDividerChar);
+		    }
+		    else {
+			this.print(RIGHT_1);
+		    }
+		}
+		this.print(RESET_STYLE);
+	    }   
+	    this.print(dividerStyleStr);
+	    this.print(onRow ? rBorderTeeChar : vertDividerChar);
+	    this.print(RESET_STYLE);
+	    this.print(NEXT_LINE);
+	}
+	this.print(dividerStyleStr);
+	this.print(dlCornerChar);
+	for (int x = 1; x < numCharsHoriz - 1; x++) {
+	    this.print((x % (cellWidth + 1)) == 0 ? dBorderTeeChar : horizDividerChar);
+	}
+	this.print(drCornerChar);
+	this.print(RESET_STYLE);
+	this.print(NEXT_LINE);
+
+	/*
 	String right1;
 	for (int y = 0; y < numCharsVert; y++) {
 	    if ((y % (cellHeight + 1)) == 0) {
@@ -108,6 +171,7 @@ public class GridPrinter extends java.io.PrintStream {
 	    this.print(RESET_STYLE);
 	    this.print(NEXT_LINE);
 	}
+	*/
     }
     
     public GridPrinter(int numRowsIn, int numColsIn, int cellHeightIn, int cellWidthIn) {
@@ -120,8 +184,18 @@ public class GridPrinter extends java.io.PrintStream {
 	cellHeight = cellHeightIn;
 	cellWidth = cellWidthIn;
 
-	vertDividerChar = '|';
-	horizDividerChar = '-';
+	vertDividerChar = '│';
+	horizDividerChar = '─';
+	crossDividerChar = '┼';
+	lBorderTeeChar = '├';
+	rBorderTeeChar = '┤';
+	uBorderTeeChar = '┬';
+	dBorderTeeChar = '┴';
+	ulCornerChar = '┌';
+	urCornerChar = '┐';
+	dlCornerChar = '└';
+	drCornerChar = '┘';
+
 	dividerStyleStr = "\u001b[48;5;239m";
     }
 
